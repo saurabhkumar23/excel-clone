@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;  
+}
+body {
+    margin: 0px;
+}
+
+/****************menu container*************/
+.menu-container {
+    border: 1px solid red; 
+    height: 3rem;
+    background-color: lightpink;
+}
+/************ formula container *************/
+.formula-container {
+    border: 1px solid red; 
+    height: 2rem;
+    background-color: lightcoral; 
+}
+/********* grid container */
+.grid-container {
+    border: 1px solid red; 
+    height: calc(100vh - ( 3rem + 2rem + 2rem)); /* giving remaining height to grid section */
+    background-color: lightgreen;
+}
+/******** sheets container *********/
+.sheets-container {
+    border: 1px solid red;
+    background-color: lightblue;
+    height: 2rem;
+    display: flex;
+}
+.add-sheet_btn-container {
+    height: 100%;
+    width: 3rem;
+    border: 1px solid;
+    padding-top: 0.2rem;
+    padding-left: 0.3rem;
+}
+.sheet-list {
+    width: calc( 100vw - 3rem );
+    border: 1px solid;
+    display:flex;
+}
+.sheet {
+    height: 100%;
+    min-width: 5rem;
+    border: 1px solid blue;
+    background-color: gray;
+}
