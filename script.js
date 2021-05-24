@@ -3,7 +3,7 @@ let sheetList   = document.querySelector('.sheet-list')
 let firstSheet = document.querySelector('.sheet')
 
 // initial manual work, for first sheet only
-firstSheet.addEventListener('click',handleSheet)
+firstSheet.addEventListener('click',makeMeActive)
 
 // on click - append new sheet at the end (add class,update idx,set as .active)
 addSheetBtn.addEventListener('click',function(){
@@ -21,11 +21,11 @@ addSheetBtn.addEventListener('click',function(){
     sheetList.appendChild(newSheet)
 
     // on click - that sheet become .active by deactivating all others (do it for first sheet manually)
-    newSheet.addEventListener('click',handleSheet)
+    newSheet.addEventListener('click',makeMeActive)
 })
 
 // that sheet become .active by deactivating all others
-function handleSheet(e){
+function makeMeActive(e){
     let currentSheet = e.currentTarget
     let allSheets = document.querySelectorAll('.sheet')         // again get, bcz of last sheet updation
     for(let i=0;i<allSheets.length;i++){                      

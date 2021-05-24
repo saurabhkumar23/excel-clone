@@ -22,6 +22,31 @@ body {
     border: 1px solid red; 
     height: calc(100vh - ( 3rem + 2rem + 2rem)); /* giving remaining height to grid section */
     background-color: lightgreen;
+    overflow: auto;
+}
+.box{
+    height: 2rem;
+    width:2rem;
+    border:1px solid;
+    text-align: center;
+}
+.left_box{
+    background-color:gray;
+}
+.top_row{
+    /* left: 2rem;
+    top: 0rem;
+    position: absolute; */
+    height:2rem;
+    background-color:green;
+    /* display:flex; */
+}
+.grid{
+    height:2rem;
+    background-color:lightblue;
+    /* left: 2rem;
+    top: 2rem;
+    position: absolute; */
 }
 /******** sheets container *********/
 .sheets-container {
@@ -41,6 +66,16 @@ body {
     width: calc( 100vw - 3rem );
     border: 1px solid;
     display:flex;
+    /* for scroll */
+    overflow: auto;
+}
+/* for hiding the scroll bar */
+.sheet-list::-webkit-scrollbar {
+    display: none;
+}
+.sheet-list{
+    -ms-overflow-style: none;  
+    scrollbar-width: none; 
 }
 .sheet {
     height: 100%;
