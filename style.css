@@ -16,6 +16,18 @@ body {
     border: 1px solid red; 
     height: 2rem;
     background-color: lightcoral; 
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.formula-container > *{
+    height:70%;
+}
+.address-input{
+width:4rem;
+}
+.formula-input{
+    width:calc(100vw - 6rem);
 }
 /********* grid container */
 .grid-container {
