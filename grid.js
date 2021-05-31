@@ -34,7 +34,7 @@ for (let i = 0; i < rows; i++) {
         cell.setAttribute("class", "cell")
         cell.setAttribute("rid", i)           // matrix coords
         cell.setAttribute("cid", j)
-        //cell.setAttribute("contenteditable","true")
+        cell.setAttribute("contenteditable","true")
         row.appendChild(cell)
     }
     grid.appendChild(row)
