@@ -23,6 +23,8 @@ body {
     height: calc(100vh - ( 3rem + 2rem + 2rem)); /* giving remaining height to grid section */
     background-color: lightgreen;
     overflow: auto;
+    /* for childs positioning */
+    position: relative;               
 }
 .box{
     height: 2rem;
@@ -34,9 +36,9 @@ body {
     background-color:gray;
 }
 .top_row{
-    /* left: 2rem;
+    left: 2rem;
     top: 0rem;
-    position: absolute; */
+    position: absolute;
     height:2rem;
     display:flex;
 }
@@ -51,9 +53,9 @@ body {
 }
 .grid{
     background-color:lightblue;
-    /* left: 2rem;
+    left: 2rem;
     top: 2rem;
-    position: absolute; */
+    position: absolute;
 }
 /******** sheets container *********/
 .sheets-container {

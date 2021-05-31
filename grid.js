@@ -32,7 +32,7 @@ for (let i = 0; i < rows; i++) {
         // each cell will have - .cell,rid,cid,contenteditable
         //cell.innerText = `${i}${j}`
         cell.setAttribute("class", "cell")
-        cell.setAttribute("rid", i)
+        cell.setAttribute("rid", i)           // matrix coords
         cell.setAttribute("cid", j)
         //cell.setAttribute("contenteditable","true")
         row.appendChild(cell)
